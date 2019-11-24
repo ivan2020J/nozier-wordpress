@@ -1,0 +1,27 @@
+{
+    "name": "nozier/nozier-wordpress",
+    "description": "Nozier client for Wordpress!",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nozier",
+            "email": "info@nozier.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "nozier/nozier-client": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://gitlab.com/nozier/nozier-client.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nozier\\Wordpress\\": "src/"
+        }
+    }
+}
