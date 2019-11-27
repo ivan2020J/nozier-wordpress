@@ -42,7 +42,7 @@ abstract class Routes
     public static function verify(): bool
     {
         $request = Request::createFromGlobals();
-        $token = 'testing';
+        $token = get_option('nozier_token');
 
         try {
             $request->validate($token);

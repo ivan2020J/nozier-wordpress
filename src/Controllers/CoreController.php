@@ -20,6 +20,7 @@ class CoreController extends AbstractController
      */
     public function register(): void
     {
+        // Fetch versions and updates.
         register_rest_route(
             'nozier/v1',
             '/core/fetch',
@@ -49,7 +50,7 @@ class CoreController extends AbstractController
     /**
      * Fetch the software versions and updates.
      * @access public
-     * @return \Nozier\NozierClient\Response
+     * @return void
      */
     public function fetch()
     {
@@ -62,14 +63,14 @@ class CoreController extends AbstractController
             $wpdb->db_version(),
             (string) get_bloginfo('version'),
             $updates
-        ))->setToken('testing')->send(); // @todo Change token.
+        ))->setToken(get_option('nozier_token'))->send(); // @todo Change token.
         exit;
     }
 
     /**
      * Upgrade the core.
      * @access public
-     * @return \Nozier\NozierClient\Response
+     * @return void
      */
     public function upgradeCore()
     {

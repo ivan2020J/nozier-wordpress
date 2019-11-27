@@ -43,7 +43,8 @@ class PluginController extends AbstractController
         // We cannot update any plugins if the file modification flag is enabled.
         if (defined('DISALLOW_FILE_MODS') && DISALLOW_FILE_MODS) {
             return (new Response(null, Response::HTTP_METHOD_NOT_ALLOWED))
-                ->setToken('testing'); // @todo Change token.
+                ->setToken(get_option('nozier_token'))
+                ->send();
         }
 
         // Validate the input.
@@ -52,10 +53,11 @@ class PluginController extends AbstractController
 
         if (!property_exists($json, 'update') || !is_array($json->update)) {
             return (new Response(null, Response::HTTP_UNPROCESSABLE_ENTITY))
-                ->setToken('testing'); // @todo Change token.
+                ->setToken(get_option('nozier_token'))
+                ->send();
         }
 
-        $response = (new UpdateSoftwareResponse)->setToken('testing'); // @todo Change token.
+        $response = (new UpdateSoftwareResponse)->setToken(get_option('nozier_token'));
 
         foreach ($json->update as $path) {
             try {
