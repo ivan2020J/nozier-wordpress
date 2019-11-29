@@ -6,12 +6,12 @@
         "source": {
             "type": "git",
             "url": "git@gitlab.com:nozier/nozier-client.git",
-            "reference": "660c647e9d56320119b0a72d6c7712fb7a53c07f"
+            "reference": "4b52a6c586b5f58d9cef97ee6d79a3a8bae712de"
         },
         "dist": {
             "type": "zip",
-            "url": "https://gitlab.com/api/v4/projects/nozier%2Fnozier-client/repository/archive.zip?sha=660c647e9d56320119b0a72d6c7712fb7a53c07f",
-            "reference": "660c647e9d56320119b0a72d6c7712fb7a53c07f",
+            "url": "https://gitlab.com/api/v4/projects/nozier%2Fnozier-client/repository/archive.zip?sha=4b52a6c586b5f58d9cef97ee6d79a3a8bae712de",
+            "reference": "4b52a6c586b5f58d9cef97ee6d79a3a8bae712de",
             "shasum": ""
         },
         "require": {
@@ -21,7 +21,7 @@
             "nesbot/carbon": "^2.26",
             "phpunit/phpunit": "^8.4"
         },
-        "time": "2019-11-15T20:55:30+00:00",
+        "time": "2019-11-29T08:17:04+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -163,17 +163,17 @@
     },
     {
         "name": "symfony/polyfill-intl-idn",
-        "version": "v1.12.0",
-        "version_normalized": "1.12.0.0",
+        "version": "v1.13.0",
+        "version_normalized": "1.13.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-intl-idn.git",
-            "reference": "6af626ae6fa37d396dc90a399c0ff08e5cfc45b2"
+            "reference": "6f9c239e61e1b0c9229a28ff89a812dc449c3d46"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/6af626ae6fa37d396dc90a399c0ff08e5cfc45b2",
-            "reference": "6af626ae6fa37d396dc90a399c0ff08e5cfc45b2",
+            "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/6f9c239e61e1b0c9229a28ff89a812dc449c3d46",
+            "reference": "6f9c239e61e1b0c9229a28ff89a812dc449c3d46",
             "shasum": ""
         },
         "require": {
@@ -184,11 +184,11 @@
         "suggest": {
             "ext-intl": "For best performance"
         },
-        "time": "2019-08-06T08:03:45+00:00",
+        "time": "2019-11-27T13:56:44+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.12-dev"
+                "dev-master": "1.13-dev"
             }
         },
         "installation-source": "dist",
@@ -227,17 +227,17 @@
     },
     {
         "name": "symfony/polyfill-mbstring",
-        "version": "v1.12.0",
-        "version_normalized": "1.12.0.0",
+        "version": "v1.13.0",
+        "version_normalized": "1.13.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-mbstring.git",
-            "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17"
+            "reference": "7b4aab9743c30be783b73de055d24a39cf4b954f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/b42a2f66e8f1b15ccf25652c3424265923eb4f17",
-            "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17",
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7b4aab9743c30be783b73de055d24a39cf4b954f",
+            "reference": "7b4aab9743c30be783b73de055d24a39cf4b954f",
             "shasum": ""
         },
         "require": {
@@ -246,11 +246,11 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2019-08-06T08:03:45+00:00",
+        "time": "2019-11-27T14:18:11+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.12-dev"
+                "dev-master": "1.13-dev"
             }
         },
         "installation-source": "dist",
@@ -288,27 +288,27 @@
     },
     {
         "name": "symfony/polyfill-php72",
-        "version": "v1.12.0",
-        "version_normalized": "1.12.0.0",
+        "version": "v1.13.0",
+        "version_normalized": "1.13.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-php72.git",
-            "reference": "04ce3335667451138df4307d6a9b61565560199e"
+            "reference": "66fea50f6cb37a35eea048d75a7d99a45b586038"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/04ce3335667451138df4307d6a9b61565560199e",
-            "reference": "04ce3335667451138df4307d6a9b61565560199e",
+            "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/66fea50f6cb37a35eea048d75a7d99a45b586038",
+            "reference": "66fea50f6cb37a35eea048d75a7d99a45b586038",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2019-08-06T08:03:45+00:00",
+        "time": "2019-11-27T13:56:44+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.12-dev"
+                "dev-master": "1.13-dev"
             }
         },
         "installation-source": "dist",

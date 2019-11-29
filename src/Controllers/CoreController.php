@@ -3,10 +3,10 @@ declare(strict_types = 1);
 
 namespace Nozier\Wordpress\Controllers;
 
-use Nozier\NozierClient\Response;
 use Nozier\Wordpress\UpdaterSkin;
 use Nozier\Client\Responses\FetchResponse;
 use Nozier\Wordpress\Helpers\PluginHelper;
+use Nozier\Client\Responses\UpdateCoreResponse;
 
 /**
  * The core controller handles fetches, versions and updates.
@@ -70,14 +70,15 @@ class CoreController extends AbstractController
     /**
      * Upgrade the core.
      * @access public
-     * @return void
+     * @return \Nozier\Client\Responses\UpdateCoreResponse|void
      */
     public function upgradeCore()
     {
         // Check if it is allowed to modify any files.
         if (defined('DISALLOW_FILE_MODS') && DISALLOW_FILE_MODS) {
-            http_response_code(403);
-            return new Response(false, 'File modifications disabled.', ['code' => 0]);
+            return (new UpdateCoreResponse(false))
+                ->setToken(get_option('nozier_token'))
+                ->send();
         }
 
         // Include the required files for the updater.
@@ -88,8 +89,9 @@ class CoreController extends AbstractController
 
         // Check if the filesystem is writable.
         if (!$this->checkFilesystemWritable()) {
-            http_response_code(422);
-            return new Response(false, 'Filesystem not writable.', ['code' => 1]);
+            return (new UpdateCoreResponse(false))
+                ->setToken(get_option('nozier_token'))
+                ->send();
         }
 
         // Force a refresh of the update.
@@ -98,15 +100,17 @@ class CoreController extends AbstractController
 
         // Check if the updates could be retrieved.
         if (is_wp_error($updates) || !$updates) {
-            http_response_code(422);
-            return new Response(false, 'Core is already up-to-date.', ['code' => 2]);
+            return (new UpdateCoreResponse(false))
+                ->setToken(get_option('nozier_token'))
+                ->send();
         }
 
         // Reset the update array.
         $update = reset($updates);
         if (!$update) {
-            http_response_code(422);
-            return new Response(false, 'Core is already up-to-date.', ['code' => 3]);
+            return (new UpdateCoreResponse(false))
+                ->setToken(get_option('nozier_token'))
+                ->send();
         }
 
         $newVersion = $update->version;
@@ -117,8 +121,9 @@ class CoreController extends AbstractController
         $result = $upgrader->upgrade($update);
 
         if (is_wp_error($result)) {
-            http_response_code(422);
-            return new Response(false, 'Failed to update the core.', ['code' => 4]);
+            return (new UpdateCoreResponse(false))
+                ->setToken(get_option('nozier_token'))
+                ->send();
         }
 
         // Finish the upgrade.
@@ -127,7 +132,9 @@ class CoreController extends AbstractController
 
         wp_upgrade();
 
-        return new Response(true, 'Core updated.', ['version' => $newVersion]);
+        (new UpdateCoreResponse(true, $newVersion))
+            ->setToken(get_option('nozier_token'))
+            ->send();
     }
 
     /**
