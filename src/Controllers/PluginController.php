@@ -61,11 +61,9 @@ class PluginController extends AbstractController
 
         foreach ($json->update as $path) {
             try {
-                if (!PluginHelper::update($path)) {
-                    $response->addFailed($path);
-                } else {
-                    $response->addSuccess($path);
-                }
+                PluginHelper::update($path)
+                    ? $response->addSuccess($path)
+                    : $response->addFailed($path);
             } catch (\Exception $e) {
                 $response->addFailed($path);
             }

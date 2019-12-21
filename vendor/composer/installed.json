@@ -6,12 +6,12 @@
         "source": {
             "type": "git",
             "url": "git@gitlab.com:nozier/nozier-client.git",
-            "reference": "4b52a6c586b5f58d9cef97ee6d79a3a8bae712de"
+            "reference": "493561580eaa13279550fbc123ca27dac6aeab63"
         },
         "dist": {
             "type": "zip",
-            "url": "https://gitlab.com/api/v4/projects/nozier%2Fnozier-client/repository/archive.zip?sha=4b52a6c586b5f58d9cef97ee6d79a3a8bae712de",
-            "reference": "4b52a6c586b5f58d9cef97ee6d79a3a8bae712de",
+            "url": "https://gitlab.com/api/v4/projects/nozier%2Fnozier-client/repository/archive.zip?sha=493561580eaa13279550fbc123ca27dac6aeab63",
+            "reference": "493561580eaa13279550fbc123ca27dac6aeab63",
             "shasum": ""
         },
         "require": {
@@ -21,7 +21,7 @@
             "nesbot/carbon": "^2.26",
             "phpunit/phpunit": "^8.4"
         },
-        "time": "2019-11-29T08:17:04+00:00",
+        "time": "2019-12-21T19:57:23+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -42,17 +42,17 @@
     },
     {
         "name": "symfony/http-foundation",
-        "version": "v4.4.0",
-        "version_normalized": "4.4.0.0",
+        "version": "v4.4.2",
+        "version_normalized": "4.4.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/http-foundation.git",
-            "reference": "502040dd2b0cf0a292defeb6145f4d7a4753c99c"
+            "reference": "fcae1cff5b57b2a9c3aabefeb1527678705ddb62"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/502040dd2b0cf0a292defeb6145f4d7a4753c99c",
-            "reference": "502040dd2b0cf0a292defeb6145f4d7a4753c99c",
+            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/fcae1cff5b57b2a9c3aabefeb1527678705ddb62",
+            "reference": "fcae1cff5b57b2a9c3aabefeb1527678705ddb62",
             "shasum": ""
         },
         "require": {
@@ -64,7 +64,7 @@
             "predis/predis": "~1.0",
             "symfony/expression-language": "^3.4|^4.0|^5.0"
         },
-        "time": "2019-11-17T10:10:42+00:00",
+        "time": "2019-12-19T15:57:49+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -99,17 +99,17 @@
     },
     {
         "name": "symfony/mime",
-        "version": "v5.0.0",
-        "version_normalized": "5.0.0.0",
+        "version": "v5.0.2",
+        "version_normalized": "5.0.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/mime.git",
-            "reference": "76f3c09b7382bf979af7bcd8e6f8033f1324285e"
+            "reference": "0e6a4ced216e49d457eddcefb61132173a876d79"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/mime/zipball/76f3c09b7382bf979af7bcd8e6f8033f1324285e",
-            "reference": "76f3c09b7382bf979af7bcd8e6f8033f1324285e",
+            "url": "https://api.github.com/repos/symfony/mime/zipball/0e6a4ced216e49d457eddcefb61132173a876d79",
+            "reference": "0e6a4ced216e49d457eddcefb61132173a876d79",
             "shasum": ""
         },
         "require": {
@@ -124,7 +124,7 @@
             "egulias/email-validator": "^2.1.10",
             "symfony/dependency-injection": "^4.4|^5.0"
         },
-        "time": "2019-11-18T17:27:11+00:00",
+        "time": "2019-11-30T14:12:50+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -163,8 +163,8 @@
     },
     {
         "name": "symfony/polyfill-intl-idn",
-        "version": "v1.13.0",
-        "version_normalized": "1.13.0.0",
+        "version": "v1.13.1",
+        "version_normalized": "1.13.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-intl-idn.git",
@@ -227,8 +227,8 @@
     },
     {
         "name": "symfony/polyfill-mbstring",
-        "version": "v1.13.0",
-        "version_normalized": "1.13.0.0",
+        "version": "v1.13.1",
+        "version_normalized": "1.13.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -288,8 +288,8 @@
     },
     {
         "name": "symfony/polyfill-php72",
-        "version": "v1.13.0",
-        "version_normalized": "1.13.0.0",
+        "version": "v1.13.1",
+        "version_normalized": "1.13.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-php72.git",
