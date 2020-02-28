@@ -9,7 +9,7 @@ class UpdaterSkin extends \WP_Upgrader_Skin
 {
     /**
      * Show the header.
-     * @access public
+     *
      * @return void
      */
     public function header()
@@ -19,7 +19,7 @@ class UpdaterSkin extends \WP_Upgrader_Skin
 
     /**
      * Show the footer.
-     * @access public
+     *
      * @return void
      */
     public function footer()
@@ -30,7 +30,7 @@ class UpdaterSkin extends \WP_Upgrader_Skin
     /**
      * Show an error.
      * @param  mixed $errors The errors.
-     * @access public
+     *
      * @return void
      */
     public function error($errors)
@@ -41,7 +41,7 @@ class UpdaterSkin extends \WP_Upgrader_Skin
     /**
      * Show feedback.
      * @param  mixed $string The feedback string.
-     * @access public
+     *
      * @return void
      */
     public function feedback($string)

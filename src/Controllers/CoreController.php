@@ -15,7 +15,7 @@ class CoreController extends AbstractController
 {
     /**
      * Register the controller routes.
-     * @access public
+     *
      * @return void
      */
     public function register(): void
@@ -49,7 +49,7 @@ class CoreController extends AbstractController
 
     /**
      * Fetch the software versions and updates.
-     * @access public
+     *
      * @return void
      */
     public function fetch()
@@ -69,7 +69,7 @@ class CoreController extends AbstractController
 
     /**
      * Upgrade the core.
-     * @access public
+     *
      * @return \Nozier\Client\Responses\UpdateCoreResponse|void
      */
     public function upgradeCore()
@@ -139,7 +139,7 @@ class CoreController extends AbstractController
 
     /**
      * Check whether the filesystem is writeable.
-     * @access protected
+     *
      * @return boolean
      */
     protected function checkFilesystemWritable(): bool

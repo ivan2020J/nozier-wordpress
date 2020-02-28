@@ -7,7 +7,7 @@ interface ControllerContract
 {
     /**
      * Register the controller routes.
-     * @access public
+     *
      * @return void
      */
     public function register(): void;

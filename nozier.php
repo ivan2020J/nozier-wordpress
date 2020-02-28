@@ -18,7 +18,7 @@ class NozierWordpressPlugin
 {
     /**
      * Init the plugin.
-     * @access public
+     *
      * @return void
      */
     public function init()
@@ -39,7 +39,7 @@ class NozierWordpressPlugin
 
     /**
      * Provide the settings.
-     * @access public
+     *
      * @return void
      */
     public function settings()

@@ -12,7 +12,7 @@ abstract class AbstractController implements ControllerContract
 {
     /**
      * Register the controller routes.
-     * @access public
+     *
      * @return void
      */
     abstract public function register(): void;

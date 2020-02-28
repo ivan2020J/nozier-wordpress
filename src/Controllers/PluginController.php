@@ -15,7 +15,7 @@ class PluginController extends AbstractController
 {
     /**
      * Register the controller routes.
-     * @access public
+     *
      * @return void
      */
     public function register(): void
@@ -35,7 +35,7 @@ class PluginController extends AbstractController
 
     /**
      * Update a plugin.
-     * @access public
+     *
      * @return \Nozier\NozierClient\Response
      */
     public function update()

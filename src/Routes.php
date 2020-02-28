@@ -15,9 +15,8 @@ abstract class Routes
 {
     /**
      * Register all the client routes.
-     * @access public
+     *
      * @return boolean
-     * @static
      */
     public static function register(): bool
     {
@@ -35,9 +34,8 @@ abstract class Routes
 
     /**
      * Verify the incoming request.
-     * @access public
+     *
      * @return boolean
-     * @static
      */
     public static function verify(): bool
     {

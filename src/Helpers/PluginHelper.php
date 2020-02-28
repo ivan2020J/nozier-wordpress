@@ -10,9 +10,8 @@ abstract class PluginHelper
 {
     /**
      * Refresh all updates.
-     * @access public
+     *
      * @return void
-     * @static
      */
     public static function refresh()
     {
@@ -33,9 +32,8 @@ abstract class PluginHelper
 
     /**
      * Get the list of plugin updates.
-     * @access public
+     *
      * @return array
-     * @static
      */
     public static function getUpdates(): array
     {
@@ -77,12 +75,12 @@ abstract class PluginHelper
 
     /**
      * Update the software.
+     *
      * @param  string $path The path.
-     * @access public
      * @return boolean
+     *
      * @throws \InvalidArgumentException Thrown on invalid path.
      * @throws \Exception Thrown when the update failed.
-     * @static
      */
     public static function update(string $path): bool
     {
@@ -107,12 +105,12 @@ abstract class PluginHelper
 
     /**
      * Update a plugin.
+     *
      * @param  string $path The plugin path.
-     * @access public
      * @return boolean
+     *
      * @throws \InvalidArgumentException Thrown on invalid path.
      * @throws \Exception Thrown when the update failed.
-     * @static
      */
     public static function updatePlugin(string $path): bool
     {
@@ -179,12 +177,12 @@ abstract class PluginHelper
 
     /**
      * Update a theme.
+     *
      * @param  string $path The theme path.
-     * @access public
      * @return boolean
+     *
      * @throws \InvalidArgumentException Thrown on invalid path.
      * @throws \Exception Thrown on failed theme update.
-     * @static
      */
     public static function updateTheme(string $path): bool
     {
