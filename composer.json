@@ -10,18 +10,12 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {
-        "nozier/nozier-client": "dev-master"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://gitlab.com/nozier/nozier-client.git"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "Nozier\\Wordpress\\": "src/"
         }
+    },
+    "require": {
+        "nozier/nozier-client": "^1.0"
     }
 }
