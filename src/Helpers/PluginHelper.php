@@ -89,12 +89,12 @@ abstract class PluginHelper
         }
 
         // Plugin update.
-        if (strpos('plugin-', $path) === 0) {
+        if (strpos($path, 'plugin-') === 0) {
             return self::updatePlugin(str_replace('plugin-', '', $path));
         }
 
         // Theme update.
-        if (strpos('theme-', $path) === 0) {
+        if (strpos($path, 'theme-') === 0) {
             return self::updateTheme(str_replace('theme-', '', $path));
         }
 
